@@ -1,0 +1,6 @@
+gunicorn
+whitenoise
+setuptools
+django
+django-heroku
+pillow

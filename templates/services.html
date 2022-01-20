@@ -1,0 +1,46 @@
+
+
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+
+
+<hr />
+<div class="container-fluid mb-4 mt-3 ">
+    <div class="row justify-content-center mt-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-auto row-cols-xl-auto">
+
+
+{% for prod  in products %}
+
+
+<div class="col mt-4" style="width:17rem">
+<div class="card">
+    <img src="{{prod.prod_img.url}}" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{prod.prod_name}}</h5>
+      <p class="card-text">{{prod.prod_desc}} .</p>
+      <a href="/" class="btn btn-primary">Shop Now </a>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+
+
+
+{% endfor %}
+
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock body %}
